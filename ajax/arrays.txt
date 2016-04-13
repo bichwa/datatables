@@ -1,0 +1,31 @@
+{
+  "data": [
+    [
+      1,
+      "Eric",
+      "rickarani@gmail.com",
+      "Nyeri"
+    ],
+    [
+      52,
+      "Ben",
+      "ben@gmail.com",
+      "Vihiga"
+    ],
+    [
+      56,
+      "Bill",
+      "bill@gmail.com",
+      "Masinga"
+    ],
+
+    [
+      58,
+      "Alice",
+      "alice@gmail.com",
+      "Entebe"
+    ]
+
+
+    ]
+   }

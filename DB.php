@@ -2,8 +2,25 @@
 <head>
 	<title></title>
 
-	<link rel="stylesheet" type="text/css" href="jquery.dataTables.min.css">
-	
+	<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="css/buttons.dataTables.min.css">
+
+
+
+<script>
+
+
+$(document).ready(function() {
+    $('#example').DataTable( {
+        "processing": true,
+        "serverSide": true,
+        "ajax": "process.php"
+    } );
+} );
+</script>
+
+
+    
 </head>
 <body>
 
@@ -37,79 +54,38 @@ if ($results-> num_rows > 0) {
 }
 ?>
 
-<table id="example" class="display" cellspacing="0" width="100%">
-	<thead>
-	<tr>
-		<th>ID</th>
-		<th>Name</th>
-	    <th>Email</th>
-	    <th>Town</th>
-	</tr>
-	</thead>
-
-	<tfoot>
-		<tr>
-		<th>ID</th>
-		<th>Name</th>
-	    <th>Email</th>
-	    <th>Town</th>
-	</tr>
-	</tfoot>
-
-	<tbody>
-	<tr>
-		<td>1</td>
-		<td>Eric</td>
-		<td>rickarani@gmail.com</td>
-		<td>Nyeri</td>
-
-
-	</tr>
-
-	<tr>
-		<td>2</td>
-		<td>Mike</td>
-		<td>mike@gmail.com</td>
-		<td>Nairobi</td>
-
-
-	</tr>
-
-	<tr>
-		<td>4</td>
-		<td>Agness</td>
-		<td>aggie@gmail.com</td>
-		<td>Kisumu</td>
-
-
-	</tr>
-
-	<tr>
-		<td>67</td>
-		<td>Benson</td>
-		<td>ben@gmail.com</td>
-		<td>Karatina</td>
-
-
-	</tr>
-</tbody>
+<table id="example" class="display " cellspacing="0" width="100%">
+<thead>
+            <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Town.</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Town.</th>
+            </tr>
+        </tfoot>
 
 
 </table>
 </body>
-<script type="text/javascript" src = "jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src = "jquery.dataTables.min.js"></script>
+<script type="text/javascript" src = "js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src = "js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src = "js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src = "js/buttons.flash.min.js"></script> 
+<script type="text/javascript" src = "js/jszip.min.js"></script>
+<script type="text/javascript" src = "js/pdfmake.min.js"></script>
+<script type="text/javascript" src = "js/vfs_fonts.js"></script>
+<script type="text/javascript" src = "js/buttons.html5.min.js"></script>
 
-<script>
-$(document).ready(function() {
-    $('#example').DataTable( {
-        dom: 'Bfrtip',
-        buttons: [
-            'copy', 'csv', 'excel', 'pdf', 'print'
-        ]
-    } );
-} );
-</script>
+
+
 </html>
 
 
